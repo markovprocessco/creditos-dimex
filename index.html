@@ -1,172 +1,656 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Créditos para Jubilados y Pensionados - Cristian Cano | DIMEX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        header {
-            background-color: #00A651;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2em;
-        }
-        header p {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .hero {
-            text-align: center;
-            min-height: auto;
-            overflow: visible;
-        }
-        .hero .contact-highlight {
-            font-size: 2em;
-            color: #00A651;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-        .hero .contact-highlight a {
-            color: #00A651;
-            text-decoration: none;
-        }
-        .benefits ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .benefits li {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #E6F7E6;
-            border-radius: 4px;
-        }
-        .form-section {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .whatsapp-button {
-            display: block;
-            margin: 10px auto;
-            width: 80%;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.2em;
-            color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
-        .contact p {
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #00A651;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
-        .disclaimer {
-            font-style: italic;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
-        }
-        .faq {
-            margin-top: 20px;
-        }
-        .faq h3 {
-            color: #00A651;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Créditos para Jubilados y Pensionados en Tepic | Cristian Cano · DIMEX</title>
+<meta name="description" content="Créditos para jubilados y pensionados del IMSS, ISSSTE, CFE y PEMEX. Desde $50,000 hasta $500,000. Te atiende Cristian Cano, promotor DIMEX en Tepic. Sin trámites complicados.">
+<meta name="theme-color" content="#0B2E1E">
+
+<!-- Vista previa al compartir por WhatsApp / redes -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Créditos para Jubilados y Pensionados · Cristian Cano (DIMEX)">
+<meta property="og:description" content="Desde $50,000 hasta $500,000 para jubilados y pensionados del IMSS, ISSSTE, CFE y PEMEX. Atención personal en Tepic. Sin descargar ninguna app.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1514415008039-efa173293080?fm=jpg&q=80&w=1200&auto=format&fit=crop">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#14241B;
+    --ink-soft:#41514A;
+    --forest:#0B2E1E;
+    --green:#00833F;
+    --green-bright:#00A651;
+    --gold:#B5851F;
+    --gold-soft:#C99A33;
+    --cream:#FBF9F4;
+    --sage:#EBF3ED;
+    --sage-deep:#DCEBDF;
+    --line:#DCE4DD;
+    --wa:#0E8A43;
+
+    --imss:#00833F;
+    --issste:#9C6F1E;
+    --cfe:#C0392B;
+    --pemex:#0B5D44;
+
+    --shadow-sm:0 2px 10px rgba(11,46,30,.08);
+    --shadow-md:0 14px 38px rgba(11,46,30,.14);
+    --radius:18px;
+    --maxw:1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Source Sans 3',system-ui,sans-serif;
+    font-size:1.18rem;
+    line-height:1.7;
+    color:var(--ink);
+    background:var(--cream);
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.12;margin:0;letter-spacing:-.01em;}
+  p{margin:0 0 1em;}
+  a{color:var(--green);}
+  img{max-width:100%;display:block;}
+
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:1.18rem;
+    line-height:1.1;text-decoration:none;cursor:pointer;border:none;
+    padding:1.05rem 1.7rem;border-radius:999px;min-height:58px;
+    transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+    box-shadow:var(--shadow-sm);
+  }
+  .btn svg{width:1.45em;height:1.45em;flex-shrink:0;}
+  .btn:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);}
+  .btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+  .btn-wa{background:var(--wa);color:#fff;}
+  .btn-call{background:#fff;color:var(--forest);border:2px solid var(--forest);box-shadow:none;}
+  .btn-call:hover{background:var(--forest);color:#fff;}
+  .btn-gold{background:var(--gold);color:#fff;}
+
+  .eyebrow{
+    display:inline-block;font-family:'Source Sans 3',sans-serif;font-weight:700;
+    text-transform:uppercase;letter-spacing:.16em;font-size:.82rem;
+    color:var(--green);background:var(--sage);padding:.4rem .9rem;border-radius:999px;
+    margin-bottom:1.1rem;
+  }
+  .section-title{font-size:clamp(1.95rem,4.2vw,2.85rem);font-weight:600;color:var(--forest);}
+  .lead{font-size:1.22rem;color:var(--ink-soft);max-width:62ch;}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  }
+  .site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:68px;gap:1rem;}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--forest);}
+  .brand .mark{
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.35rem;letter-spacing:.02em;
+    background:var(--forest);color:#fff;padding:.28rem .6rem;border-radius:9px;line-height:1;
+  }
+  .brand small{display:block;font-size:.78rem;color:var(--ink-soft);font-weight:600;letter-spacing:.02em;}
+  .brand .name{font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:1rem;}
+  .header-call{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;color:var(--forest);font-weight:700;font-size:1.05rem;}
+  .header-call svg{width:1.2rem;height:1.2rem;color:var(--green);}
+  .header-call .label{color:var(--ink-soft);font-weight:600;font-size:.78rem;display:block;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;color:#fff;overflow:hidden;
+    background:#0B2E1E url('https://images.unsplash.com/photo-1514415008039-efa173293080?fm=jpg&q=80&w=1920&auto=format&fit=crop') center 30%/cover no-repeat;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg, rgba(8,40,26,.96) 0%, rgba(8,40,26,.88) 38%, rgba(8,40,26,.55) 70%, rgba(8,40,26,.30) 100%);
+  }
+  .hero .wrap{position:relative;padding:74px 22px 84px;}
+  .hero-inner{max-width:640px;}
+  .hero h1{font-size:clamp(2.35rem,6vw,4rem);font-weight:600;color:#fff;}
+  .hero h1 .hl{color:#FFE08A;}
+  .hero-sub{font-size:1.28rem;line-height:1.55;margin:1.3rem 0 1.6rem;color:#EAF3EC;max-width:54ch;}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.8rem;}
+  .hero-proof{display:flex;flex-wrap:wrap;gap:.7rem 1.6rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.22);}
+  .hero-proof span{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:1rem;color:#EAF3EC;}
+  .hero-proof svg{width:1.25rem;height:1.25rem;color:#8FE0A8;flex-shrink:0;}
+
+  /* ---------- Trust strip (institutions) ---------- */
+  .trust{background:var(--forest);color:#fff;}
+  .trust .wrap{padding:24px 22px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.8rem 1.4rem;}
+  .trust .t-label{font-weight:700;letter-spacing:.04em;color:#BFE3CC;font-size:1.02rem;}
+  .inst-pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:.45rem 1.05rem;font-weight:700;font-size:1.05rem;}
+  .inst-dot{width:.7rem;height:.7rem;border-radius:50%;}
+
+  /* ---------- Generic section ---------- */
+  .block{padding:80px 0;}
+  .block.alt{background:var(--sage);}
+  .center{text-align:center;margin:0 auto;}
+
+  /* ---------- Benefits ---------- */
+  .ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px;}
+  .ben-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 26px;box-shadow:var(--shadow-sm);transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .ben-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+  .ben-ico{width:58px;height:58px;border-radius:14px;background:var(--sage);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+  .ben-ico svg{width:30px;height:30px;color:var(--green);}
+  .ben-card h3{font-size:1.32rem;font-weight:600;color:var(--forest);margin-bottom:.4rem;}
+  .ben-card p{margin:0;font-size:1.08rem;color:var(--ink-soft);line-height:1.55;}
+
+  /* ---------- Steps ---------- */
+  .steps-band{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;}
+  .step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--line);}
+  .step:last-child{border-bottom:none;}
+  .step-num{font-family:'Fraunces',serif;font-weight:700;font-size:1.6rem;color:var(--gold);background:#fff;border:2px solid var(--gold);width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .step h3{font-size:1.3rem;font-weight:600;color:var(--forest);margin-bottom:.25rem;}
+  .step p{margin:0;color:var(--ink-soft);font-size:1.08rem;line-height:1.5;}
+  .steps-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);background:var(--sage-deep);min-height:300px;}
+  .steps-photo img{width:100%;height:100%;object-fit:cover;}
+  .no-app-note{margin-top:26px;display:inline-flex;align-items:center;gap:.7rem;background:var(--sage);border:1px solid var(--sage-deep);border-radius:14px;padding:.85rem 1.2rem;font-weight:600;color:var(--forest);font-size:1.06rem;}
+  .no-app-note svg{width:1.5rem;height:1.5rem;color:var(--green);flex-shrink:0;}
+
+  /* ---------- Institution band (dark / credibility) ---------- */
+  .cred{background:var(--forest);color:#fff;}
+  .cred .wrap{padding:64px 22px;text-align:center;}
+  .cred h2{color:#fff;font-size:clamp(1.7rem,3.6vw,2.4rem);font-weight:600;max-width:20ch;margin:0 auto .6rem;}
+  .cred p{color:#CFE6D8;max-width:60ch;margin:0 auto 2.2rem;font-size:1.14rem;}
+  .cred-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:760px;margin:0 auto;}
+  .cred-stat .num{font-family:'Fraunces',serif;font-weight:700;font-size:2.5rem;color:#FFE08A;line-height:1;}
+  .cred-stat .lbl{display:block;margin-top:.5rem;color:#CFE6D8;font-weight:600;font-size:1rem;}
+
+  /* ---------- Institution selector (signature) ---------- */
+  .picker-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:46px;}
+  .cred-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .cred-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+  .cred-top{height:8px;}
+  .cred-body{padding:26px 26px 28px;display:flex;flex-direction:column;flex-grow:1;}
+  .cred-head{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .cred-badge{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;flex-shrink:0;}
+  .cred-card h3{font-size:1.5rem;font-weight:600;color:var(--forest);line-height:1.1;}
+  .cred-card .who{margin:0 0 18px;color:var(--ink-soft);font-size:1.06rem;line-height:1.45;}
+  .cred-card .who strong{color:var(--ink);}
+  .cred-card .btn{width:100%;margin-top:auto;font-size:1.1rem;color:#fff;}
+
+  /* ---------- Advisor ---------- */
+  .advisor{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center;}
+  .advisor-photo{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-md);background:var(--sage-deep);min-height:340px;}
+  .advisor-photo img{width:100%;height:100%;object-fit:cover;}
+  .advisor-card{display:flex;align-items:center;gap:18px;margin-bottom:22px;}
+  .monogram{width:74px;height:74px;border-radius:50%;background:var(--forest);color:#FFE08A;font-family:'Fraunces',serif;font-weight:700;font-size:1.7rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:3px solid var(--gold);}
+  .advisor h2{margin-bottom:.2rem;}
+  .advisor .role{color:var(--green);font-weight:700;font-size:1.05rem;}
+  .advisor .quote{font-family:'Fraunces',serif;font-size:1.35rem;line-height:1.4;color:var(--forest);font-weight:500;margin:0 0 1.3rem;}
+  .advisor ul{list-style:none;padding:0;margin:0 0 1.8rem;}
+  .advisor li{display:flex;gap:.7rem;align-items:flex-start;padding:.4rem 0;font-size:1.08rem;color:var(--ink);}
+  .advisor li svg{width:1.4rem;height:1.4rem;color:var(--green);flex-shrink:0;margin-top:.15rem;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{max-width:820px;margin:42px auto 0;}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:14px;box-shadow:var(--shadow-sm);overflow:hidden;}
+  .faq-item summary{
+    cursor:pointer;list-style:none;padding:22px 24px;font-family:'Fraunces',serif;
+    font-weight:600;font-size:1.22rem;color:var(--forest);display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary:focus-visible{outline:3px solid var(--gold);outline-offset:-3px;border-radius:8px;}
+  .faq-plus{width:26px;height:26px;flex-shrink:0;position:relative;transition:transform .25s ease;color:var(--green);}
+  .faq-item[open] .faq-plus{transform:rotate(45deg);}
+  .faq-answer{padding:0 24px 22px;color:var(--ink-soft);font-size:1.1rem;line-height:1.6;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:46px;align-items:start;margin-top:42px;}
+  .contact-row{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:flex-start;}
+  .contact-row:last-child{border-bottom:none;}
+  .contact-ico{width:46px;height:46px;border-radius:11px;background:var(--sage);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .contact-ico svg{width:22px;height:22px;color:var(--green);}
+  .contact-row .k{font-weight:700;color:var(--forest);font-size:.95rem;text-transform:uppercase;letter-spacing:.05em;margin-bottom:.1rem;}
+  .contact-row .v{color:var(--ink);font-size:1.12rem;}
+  .contact-row a{font-weight:700;text-decoration:none;}
+  .contact-cta{background:var(--forest);color:#fff;border-radius:var(--radius);padding:38px 32px;box-shadow:var(--shadow-md);}
+  .contact-cta h3{color:#fff;font-size:1.6rem;font-weight:600;margin-bottom:.6rem;}
+  .contact-cta p{color:#CFE6D8;font-size:1.08rem;}
+  .contact-cta .btn{width:100%;margin-top:.6rem;}
+  .contact-cta .btn-call{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+  .contact-cta .btn-call:hover{background:#fff;color:var(--forest);}
+
+  .disclaimer{font-size:.96rem;color:var(--ink-soft);font-style:italic;line-height:1.55;max-width:90ch;margin:32px auto 0;text-align:center;padding:18px 22px;border-top:1px solid var(--line);}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:#082017;color:#A9C7B5;padding:40px 0 110px;font-size:.98rem;}
+  footer.site .wrap{text-align:center;}
+  footer.site strong{color:#E9F4ED;}
+  footer.site a{color:#9FE0B4;}
+  .foot-legal{margin-top:.8rem;font-size:.9rem;line-height:1.6;max-width:80ch;margin-left:auto;margin-right:auto;}
+
+  /* ---------- Sticky mobile CTA ---------- */
+  .mobile-bar{
+    position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;
+    grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+    background:rgba(251,249,244,.97);backdrop-filter:blur(8px);border-top:1px solid var(--line);
+    box-shadow:0 -6px 20px rgba(11,46,30,.12);
+  }
+  .mobile-bar .btn{font-size:1.08rem;padding:.9rem 1rem;min-height:54px;box-shadow:none;}
+
+  /* ---------- Reveal animation ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:920px){
+    .ben-grid{grid-template-columns:repeat(2,1fr);}
+    .steps-band{grid-template-columns:1fr;gap:34px;}
+    .steps-photo{min-height:240px;order:-1;}
+    .advisor{grid-template-columns:1fr;gap:30px;}
+    .advisor-photo{min-height:280px;}
+    .contact-grid{grid-template-columns:1fr;gap:30px;}
+    .cred-stats{gap:18px;}
+    .cred-stat .num{font-size:2.1rem;}
+  }
+  @media(max-width:680px){
+    body{font-size:1.12rem;}
+    .block{padding:58px 0;}
+    .hero .wrap{padding:54px 22px 64px;}
+    .ben-grid{grid-template-columns:1fr;}
+    .picker-grid{grid-template-columns:1fr;}
+    .cred-stats{grid-template-columns:1fr;gap:26px;}
+    .header-call .num{display:none;}
+    .brand small{display:none;}
+    .mobile-bar{display:grid;}
+    .hero-cta{flex-direction:column;}
+    .hero-cta .btn{width:100%;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{scroll-behavior:auto!important;}
+    .reveal{opacity:1;transform:none;transition:none;}
+    .btn,.ben-card,.cred-card{transition:none;}
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Créditos Exclusivos para Jubilados y Pensionados</h1>
-        <p>Soy Cristian Cano, promotor Dimex. Evalúo tu tasa sin compromiso y te oriento paso a paso.</p>
-    </header>
 
-    <section class="hero">
-        <div class="contact-highlight">¡Llama ahora a Cristian Cano al <a href="tel:3113425103">311 342 5103</a> para una consulta gratuita!</div>
-        <a href="https://wa.me/523113425103?text=Hola%20Cristian,%20quiero%20conocer%20mi%20tasa%20Dimex" class="whatsapp-button" target="_blank" style="background-color: #25D366; display: inline-block; width: auto;">Habla por WhatsApp</a>
-        <h2>Bienvenido a DIMEX Capital</h2>
-        <p>Con más de 20 años de experiencia, DIMEX Capital S.A. de C.V., SOFOM E.N.R., es tu aliado confiable en créditos para jubilados y pensionados de IMSS, ISSSTE, CFE y PEMEX. Supervisados por la Comisión Nacional Bancaria y de Valores en materia de prevención de lavado de dinero.</p>
-    </section>
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="DIMEX - Cristian Cano">
+      <span class="mark">DIMEX</span>
+      <span class="name">Cristian Cano<small>Promotor en Tepic</small></span>
+    </a>
+    <a class="header-call" href="tel:3113425103">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span><span class="label">Llámame</span><span class="num">311 342 5103</span></span>
+    </a>
+  </div>
+</header>
 
-    <section class="benefits">
-        <h2>Beneficios de Nuestros Créditos</h2>
-        <ul>
-            <li>Préstamos desde $50,000 hasta $500,000.</li>
-            <li>Tasa personalizada según tu institución y perfil. Yo te ayudo a revisarla en la app.</li>
-            <li>Descuentos directos de tu pensión o tarjeta de débito.</li>
-            <li>Asesoramiento personalizado por Cristian Cano, promotor Dimex.</li>
-            <li>App móvil para monitorear pagos y fechas.</li>
-            <li>Disponible para jubilados y pensionados de IMSS, ISSSTE, CFE y PEMEX.</li>
-        </ul>
-        <div class="disclaimer">
-            Las tasas son personalizadas y se determinan al momento de la evaluación en la app Dimex. La tasa preferencial de nómina solo aplica para clientes IMSS con acceso al portal electrónico. Sujeto a aprobación. Consulta términos y condiciones con tu asesor.
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="wrap">
+    <div class="hero-inner">
+      <h1>El crédito que te mereces, <span class="hl">jubilado o pensionado</span></h1>
+      <p class="hero-sub">Préstamos desde $50,000 hasta $500,000 para pensionados del <strong>IMSS, ISSSTE, CFE y PEMEX</strong>. Te atiendo yo, Cristian Cano, en Tepic. Reviso tu caso sin costo y sin descargar ninguna app.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa" href="https://wa.me/523113425103?text=Hola%20Cristian,%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex%20para%20jubilados%20y%20pensionados" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
+          Escríbeme por WhatsApp
+        </a>
+        <a class="btn btn-call" href="tel:3113425103">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Llamar al 311 342 5103
+        </a>
+      </div>
+      <div class="hero-proof">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Más de 20 años de experiencia</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Supervisada por la CNBV</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>+200 sucursales en México</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <span class="t-label">Atendemos a pensionados de:</span>
+    <span class="inst-pill"><span class="inst-dot" style="background:#00A651"></span>IMSS</span>
+    <span class="inst-pill"><span class="inst-dot" style="background:#C99A33"></span>ISSSTE</span>
+    <span class="inst-pill"><span class="inst-dot" style="background:#E66"></span>CFE</span>
+    <span class="inst-pill"><span class="inst-dot" style="background:#3AA877"></span>PEMEX</span>
+  </div>
+</div>
+
+<!-- ============ BENEFITS ============ -->
+<section class="block" id="beneficios">
+  <div class="wrap">
+    <div class="center" style="max-width:720px">
+      <span class="eyebrow">Por qué confiar en DIMEX</span>
+      <h2 class="section-title">Un crédito hecho para tu pensión</h2>
+      <p class="lead center" style="margin-top:1rem">Sin complicaciones, sin filas y con un trato cercano. Esto es lo que recibes:</p>
+    </div>
+
+    <div class="ben-grid">
+      <div class="ben-card reveal">
+        <div class="ben-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>Desde $50,000 hasta $500,000</h3>
+        <p>Solicita el monto que necesitas. Lo ajustamos a tu pensión y a tu capacidad de pago.</p>
+      </div>
+      <div class="ben-card reveal">
+        <div class="ben-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+        <h3>Se descuenta solo</h3>
+        <p>El pago se descuenta directo de tu pensión o tarjeta. Sin filas y sin que tengas que estar pendiente.</p>
+      </div>
+      <div class="ben-card reveal">
+        <div class="ben-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+        <h3>Tu tasa, a tu medida</h3>
+        <p>Reviso tu institución y tu perfil para conseguirte la mejor tasa posible. Sin compromiso.</p>
+      </div>
+      <div class="ben-card reveal">
+        <div class="ben-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>Sin penalización por adelantar</h3>
+        <p>Puedes hacer pagos extra o liquidar tu crédito antes de tiempo sin ningún cargo adicional.</p>
+      </div>
+      <div class="ben-card reveal">
+        <div class="ben-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Tranquilidad para tu familia</h3>
+        <p>En caso de fallecimiento, la deuda queda saldada y no se transfiere a tus herederos.</p>
+      </div>
+      <div class="ben-card reveal">
+        <div class="ben-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h3>Atención humana y cercana</h3>
+        <p>Te atiendo yo, Cristian, en persona o por WhatsApp. Nada de call centers eternos ni robots.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="block alt" id="como-funciona">
+  <div class="wrap">
+    <div class="steps-band">
+      <div>
+        <span class="eyebrow">Así de fácil</span>
+        <h2 class="section-title">Tres pasos y listo</h2>
+        <p class="lead" style="margin:1rem 0 1.4rem">No necesitas saber de computadoras ni descargar nada. Solo platica conmigo:</p>
+        <div class="step reveal">
+          <span class="step-num">1</span>
+          <div><h3>Escríbeme</h3><p>Cuéntame de qué institución eres: IMSS, ISSSTE, CFE o PEMEX.</p></div>
         </div>
-    </section>
+        <div class="step reveal">
+          <span class="step-num">2</span>
+          <div><h3>Reviso tu caso</h3><p>Yo evalúo tu perfil y te digo cuánto puedes recibir y a qué tasa. Sin compromiso.</p></div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">3</span>
+          <div><h3>Recibe tu dinero</h3><p>Si estás de acuerdo, completamos el trámite y el pago se descuenta de tu pensión.</p></div>
+        </div>
+        <div class="no-app-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          No necesitas descargar ninguna app. Yo me encargo de todo.
+        </div>
+      </div>
+      <div class="steps-photo reveal">
+        <img src="https://images.unsplash.com/photo-1761839257647-df30867afd54?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Pareja de adultos mayores disfrutando juntos al aire libre" loading="lazy" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="form-section">
-        <h2>¿Quieres saber tu tasa personalizada?</h2>
-        <p>Escoge tu institución y te oriento sin compromiso:</p>
-        
-        <a href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20jubilado%20IMSS%20y%20quiero%20conocer%20mi%20tasa%20Dimex" class="whatsapp-button" target="_blank" style="background-color: #00A651;">Soy IMSS</a>
-        
-        <a href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20pensionado%20ISSSTE%20y%20quiero%20conocer%20mi%20tasa%20Dimex" class="whatsapp-button" target="_blank" style="background-color: #C0A060;">Soy ISSSTE</a>
-        
-        <a href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20pensionado%20CFE%20y%20quiero%20conocer%20mi%20tasa%20Dimex" class="whatsapp-button" target="_blank" style="background-color: #E30613;">Soy CFE</a>
-        
-        <a href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20pensionado%20PEMEX%20y%20quiero%20conocer%20mi%20tasa%20Dimex" class="whatsapp-button" target="_blank" style="background-color: #006847;">Soy PEMEX</a>
-        
-        <p style="margin-top: 20px;">O llámame directo al <a href="tel:3113425103">311 342 5103</a></p>
-    </section>
+<!-- ============ CREDIBILITY BAND ============ -->
+<section class="cred">
+  <div class="wrap">
+    <h2>Respaldado por una institución sólida</h2>
+    <p>DIMEX Capital S.A. de C.V., SOFOM E.N.R. es una empresa con trayectoria, supervisada por la Comisión Nacional Bancaria y de Valores en materia de prevención de lavado de dinero.</p>
+    <div class="cred-stats">
+      <div class="cred-stat reveal"><span class="num">+20</span><span class="lbl">años de experiencia</span></div>
+      <div class="cred-stat reveal"><span class="num">+200</span><span class="lbl">sucursales en México</span></div>
+      <div class="cred-stat reveal"><span class="num">CNBV</span><span class="lbl">supervisada en PLD</span></div>
+    </div>
+  </div>
+</section>
 
-    <section class="faq">
-        <h2>Preguntas Frecuentes</h2>
-        <h3>¿Cuáles son los requisitos?</h3>
-        <p>Debes ser jubilado o pensionado del IMSS, ISSSTE, CFE o PEMEX. Contáctame y te explico el proceso personalizado para tu institución.</p>
-        <h3>¿Cómo liquido mi crédito?</h3>
-        <p>Puedes adelantar pagos o liquidar anticipadamente sin penalizaciones. Contacta al centro de atención para más detalles.</p>
-        <h3>¿Qué pasa en caso de fallecimiento?</h3>
-        <p>La deuda se considera saldada y no es transferible a herederos.</p>
-    </section>
+<!-- ============ INSTITUTION SELECTOR (signature) ============ -->
+<section class="block" id="instituciones">
+  <div class="wrap">
+    <div class="center" style="max-width:720px">
+      <span class="eyebrow">Elige tu institución</span>
+      <h2 class="section-title">¿De qué pensión eres?</h2>
+      <p class="lead center" style="margin-top:1rem">Toca tu institución y te oriento de inmediato por WhatsApp, sin compromiso.</p>
+    </div>
 
-    <section class="contact">
-        <h2>Contáctanos</h2>
-        <p><strong>Sucursal Tepic:</strong> Av. México Norte #192, Tepic Centro, Tepic, Nayarit, CP 63000</p>
-        <p><strong>Asesor:</strong> Cristian Cano - Tel: 311 342 5103</p>
-        <p><strong>Centro de Atención:</strong> 81 5515 2015 | WhatsApp: 81 3118 3612</p>
-        <p><strong>Correo:</strong> servicioaclientes@dimex.mx</p>
-        <p><strong>Sitio Oficial:</strong> <a href="https://www.dimex.mx">www.dimex.mx</a></p>
-        <p>Encuentra una de nuestras más de 200 sucursales en todo México.</p>
-    </section>
+    <div class="picker-grid">
+      <!-- IMSS -->
+      <div class="cred-card reveal">
+        <div class="cred-top" style="background:var(--imss)"></div>
+        <div class="cred-body">
+          <div class="cred-head">
+            <span class="cred-badge" style="background:var(--imss)">IMSS</span>
+            <h3>Soy del IMSS</h3>
+          </div>
+          <p class="who">Para <strong>jubilados y pensionados del IMSS</strong>. Te explico el proceso paso a paso.</p>
+          <a class="btn" style="background:var(--imss)" href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20jubilado%20IMSS%20y%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+            Cotizo tu caso
+          </a>
+        </div>
+      </div>
+      <!-- ISSSTE -->
+      <div class="cred-card reveal">
+        <div class="cred-top" style="background:var(--issste)"></div>
+        <div class="cred-body">
+          <div class="cred-head">
+            <span class="cred-badge" style="background:var(--issste)">ISS</span>
+            <h3>Soy del ISSSTE</h3>
+          </div>
+          <p class="who">Para <strong>pensionados del ISSSTE</strong>. Reviso tu perfil y te digo tu mejor opción.</p>
+          <a class="btn" style="background:var(--issste)" href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20pensionado%20ISSSTE%20y%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+            Cotizo tu caso
+          </a>
+        </div>
+      </div>
+      <!-- CFE -->
+      <div class="cred-card reveal">
+        <div class="cred-top" style="background:var(--cfe)"></div>
+        <div class="cred-body">
+          <div class="cred-head">
+            <span class="cred-badge" style="background:var(--cfe)">CFE</span>
+            <h3>Soy de la CFE</h3>
+          </div>
+          <p class="who">Para <strong>jubilados y pensionados de la CFE</strong>. Te acompaño en todo el trámite.</p>
+          <a class="btn" style="background:var(--cfe)" href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20pensionado%20CFE%20y%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+            Cotizo tu caso
+          </a>
+        </div>
+      </div>
+      <!-- PEMEX -->
+      <div class="cred-card reveal">
+        <div class="cred-top" style="background:var(--pemex)"></div>
+        <div class="cred-body">
+          <div class="cred-head">
+            <span class="cred-badge" style="background:var(--pemex)">PMX</span>
+            <h3>Soy de PEMEX</h3>
+          </div>
+          <p class="who">Para <strong>jubilados y pensionados de PEMEX</strong>. Atención directa y sin intermediarios.</p>
+          <a class="btn" style="background:var(--pemex)" href="https://wa.me/523113425103?text=Hola%20Cristian,%20soy%20pensionado%20PEMEX%20y%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+            Cotizo tu caso
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>
-        <p>&copy; 2026 DIMEX Capital S.A. de C.V., SOFOM E.N.R. Todos los derechos reservados.</p>
-        <p>No requerimos autorización de la SHCP. Supervisados por CNBV en PLD. Consulta nuestro <a href="https://www.dimex.mx/aviso-de-privacidad" style="color: white;">Aviso de Privacidad</a>.</p>
-    </footer>
+<!-- ============ ADVISOR ============ -->
+<section class="block alt" id="asesor">
+  <div class="wrap">
+    <div class="advisor">
+      <div class="advisor-photo reveal">
+        <img src="https://images.unsplash.com/photo-1758686253692-2d6921de12dd?fm=jpg&q=80&w=1000&auto=format&fit=crop" alt="Pareja de adultos mayores sonriendo tranquilos en casa" loading="lazy" onerror="this.parentElement.style.display='none'">
+      </div>
+      <div>
+        <div class="advisor-card">
+          <span class="monogram">CC</span>
+          <div>
+            <h2 class="section-title" style="font-size:clamp(1.7rem,3.5vw,2.3rem)">Cristian Cano</h2>
+            <span class="role">Promotor DIMEX · Tepic, Nayarit</span>
+          </div>
+        </div>
+        <p class="quote">“Mi compromiso es que entiendas bien tu crédito antes de firmar. Sin letras chiquitas y sin presiones.”</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Te explico todo en palabras claras, a tu ritmo.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Atención directa conmigo, sin intermediarios.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Consulta sin costo y sin obligación de contratar.</li>
+        </ul>
+        <a class="btn btn-wa" href="https://wa.me/523113425103?text=Hola%20Cristian,%20quiero%20que%20me%20orientes%20sobre%20un%20cr%C3%A9dito%20Dimex" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+          Hablar con Cristian
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block" id="preguntas">
+  <div class="wrap">
+    <div class="center" style="max-width:720px">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2 class="section-title">Lo que más me preguntan</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Cuáles son los requisitos?
+          <svg class="faq-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <div class="faq-answer">Ser jubilado o pensionado del IMSS, ISSSTE, CFE o PEMEX. Contáctame y te explico el proceso exacto para tu institución, paso a paso.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Necesito una app o saber de computadoras?
+          <svg class="faq-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <div class="faq-answer">No. No necesitas descargar nada ni saber de tecnología. Solo me escribes por WhatsApp o me llamas, y yo me encargo de todo el trámite por ti.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo liquido mi crédito?
+          <svg class="faq-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <div class="faq-answer">Puedes adelantar pagos o liquidar anticipadamente sin penalizaciones. Si quieres, te ayudo con los detalles o te comunico con el centro de atención.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa en caso de fallecimiento?
+          <svg class="faq-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <div class="faq-answer">La deuda se considera saldada y no es transferible a tus herederos. Es una tranquilidad importante para tu familia.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿La consulta tiene algún costo?
+          <svg class="faq-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </summary>
+        <div class="faq-answer">No. Revisar tu caso y orientarte es totalmente gratis y sin compromiso. Tú decides si quieres continuar.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="block alt" id="contacto">
+  <div class="wrap">
+    <div class="center" style="max-width:720px">
+      <span class="eyebrow">Contáctanos</span>
+      <h2 class="section-title">Estoy para ayudarte</h2>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-row">
+          <span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div><div class="k">Sucursal Tepic</div><div class="v">Av. México Norte #192, Tepic Centro, Tepic, Nayarit, CP 63000</div></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div><div class="k">Tu asesor · Cristian Cano</div><div class="v"><a href="tel:3113425103">311 342 5103</a></div></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+          <div><div class="k">Centro de atención</div><div class="v">81 5515 2015 · WhatsApp 81 3118 3612</div></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+          <div><div class="k">Correo</div><div class="v"><a href="mailto:servicioaclientes@dimex.mx">servicioaclientes@dimex.mx</a></div></div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <div><div class="k">Sitio oficial</div><div class="v"><a href="https://www.dimex.mx" target="_blank" rel="noopener">www.dimex.mx</a> · +200 sucursales en México</div></div>
+        </div>
+      </div>
+
+      <div class="contact-cta">
+        <h3>¿Listo para empezar?</h3>
+        <p>Escríbeme ahora y en minutos sabrás si calificas. Sin compromiso.</p>
+        <a class="btn btn-wa" href="https://wa.me/523113425103?text=Hola%20Cristian,%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex%20para%20jubilados%20y%20pensionados" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <a class="btn btn-call" href="tel:3113425103">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Llamar ahora
+        </a>
+      </div>
+    </div>
+
+    <p class="disclaimer">Las tasas son personalizadas y se determinan al momento de evaluar tu perfil. Sujeto a aprobación. Montos desde $50,000 hasta $500,000 según institución y capacidad de pago. Consulta términos y condiciones con tu asesor. DIMEX Capital S.A. de C.V., SOFOM E.N.R.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <p><strong>DIMEX Capital S.A. de C.V., SOFOM E.N.R.</strong> — Créditos para jubilados y pensionados del IMSS, ISSSTE, CFE y PEMEX.</p>
+    <p class="foot-legal">&copy; 2026 DIMEX Capital S.A. de C.V., SOFOM E.N.R. Todos los derechos reservados. No requiere autorización de la SHCP. Supervisada por la CNBV en materia de prevención de lavado de dinero. Consulta nuestro <a href="https://www.dimex.mx/aviso-de-privacidad" target="_blank" rel="noopener">Aviso de Privacidad</a>.</p>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY CTA ============ -->
+<div class="mobile-bar">
+  <a class="btn btn-wa" href="https://wa.me/523113425103?text=Hola%20Cristian,%20quiero%20conocer%20mi%20cr%C3%A9dito%20Dimex" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.84 9.84 0 0 0 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.23-8.23 2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.4-8.23 8.4z"/></svg>
+    WhatsApp
+  </a>
+  <a class="btn btn-call" href="tel:3113425103">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Llamar
+  </a>
+</div>
+
+<script>
+  // Animación suave al hacer scroll (respeta reduce-motion)
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      els.forEach(function(e){e.classList.add('in');});
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);}
+      });
+    },{threshold:0.14, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e);});
+  })();
+</script>
+
 </body>
 </html>
